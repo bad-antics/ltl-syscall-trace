@@ -1,0 +1,15 @@
+// ltl-syscall-trace/main.ltl
+//
+// strace-like syscall tracer using ptrace.
+//
+// This is an early skeleton — contribution is welcome! See the
+// README for build instructions.
+
+import std::io
+import std::fmt
+
+pub fn main(args: [str]) -> Int {
+    io::println("ltl-syscall-trace v0.1.0")
+    io::println("strace-like syscall tracer using ptrace.")
+    0
+}
