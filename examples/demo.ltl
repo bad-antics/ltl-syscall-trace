@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_syscall_trace
+
+import std::io
+use ltl_syscall_trace as lib
+
+fn main() {
+    io::println("ltl_syscall_trace demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
